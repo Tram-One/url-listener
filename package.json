@@ -1,0 +1,32 @@
+{
+  "name": "url-listener",
+  "version": "1.0.0",
+  "description": "Listen for url changes without using a timer",
+  "main": "dist/url-listener.js",
+  "files": ["dist/url-listener.js"],
+  "scripts": {
+    "build": "webpack",
+    "test": "jasmine tests/specs/listener-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JRJurman/url-listener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JRJurman/url-listener/issues"
+  },
+  "homepage": "https://github.com/JRJurman/url-listener#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-env": "^1.5.2",
+    "budo": "^10.0.3",
+    "jasmine": "^2.6.0",
+    "nightmare": "^2.10.0",
+    "testem": "^1.17.0",
+    "webpack": "^3.0.0"
+  }
+}
