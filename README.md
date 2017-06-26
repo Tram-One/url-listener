@@ -17,7 +17,7 @@ urlListener(event => {
 ```
 
 ## Notes
-Events may be called more than once, so whatever callback you pass
+Events may overlap and be called more than once, so whatever callback you pass
 in should be idempotent _(that is, hitting it multiple times is the same as
 hitting it once, like an elevator or cross-walk button)_.
 
