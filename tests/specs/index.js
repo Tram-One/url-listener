@@ -5,6 +5,13 @@ if (localStorage.getItem('event_calls') === null) {
   localStorage.setItem('event_calls', 0)
 }
 
+// set up old pushState event, just to make sure we don't stop calling this
+pushState = window.history.pushState;
+window.history.pushState = (...args) => {
+  localStorage.setItem('pushstate_called', true)
+  pushState.apply(window, args)
+}
+
 // set up the listener, which increments the event_calls value
 urlListener(event => {
   const calls = parseInt(localStorage.getItem('event_calls'), 10)

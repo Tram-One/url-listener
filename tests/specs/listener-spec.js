@@ -15,7 +15,10 @@ describe('url-listener', () => {
   })
 
   beforeEach(() => {
-    nightmare = new Nightmare({show: true, openDevTools: true})
+    nightmare = new Nightmare({
+      // show: true,
+      // openDevTools: true
+    })
   })
 
   it('should not break webpack (sanity check)', (done) => {
@@ -95,6 +98,21 @@ describe('url-listener', () => {
       .end()
       .then( (result) => {
         expect(result).toEqual('1')
+        done()
+      })
+      .catch( (error) => { console.error('Test Failed', error); fail(); done() })
+  })
+
+  it('should still call old pushState', (done) => {
+    nightmare
+      .goto(uri)
+      .click('#push-state-button')
+      .evaluate( () => {
+        return localStorage.getItem('pushstate_called')
+      })
+      .end()
+      .then( (result) => {
+        expect(result).toEqual('true')
         done()
       })
       .catch( (error) => { console.error('Test Failed', error); fail(); done() })
