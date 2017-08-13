@@ -1,6 +1,6 @@
 {
   "name": "url-listener",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Listen for url changes without using a timer",
   "main": "dist/url-listener.js",
   "files": [
@@ -22,7 +22,6 @@
     "type": "git",
     "url": "git+https://github.com/JRJurman/url-listener.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
