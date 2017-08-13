@@ -1,9 +1,19 @@
 {
   "name": "url-listener",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Listen for url changes without using a timer",
   "main": "dist/url-listener.js",
-  "files": ["dist/url-listener.js"],
+  "files": [
+    "dist/url-listener.js"
+  ],
+  "keywords": [
+    "frontend",
+    "history",
+    "pushstate",
+    "popstate",
+    "url",
+    "events"
+  ],
   "scripts": {
     "build": "webpack",
     "test": "jasmine tests/specs/listener-spec.js"
@@ -23,10 +33,9 @@
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.0",
     "babel-preset-env": "^1.5.2",
-    "budo": "^10.0.3",
+    "budo": "^10.0.4",
     "jasmine": "^2.6.0",
     "nightmare": "^2.10.0",
-    "testem": "^1.17.0",
     "webpack": "^3.0.0"
   }
 }

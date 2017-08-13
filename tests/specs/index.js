@@ -9,7 +9,7 @@ if (localStorage.getItem('event_calls') === null) {
 pushState = window.history.pushState;
 window.history.pushState = (...args) => {
   localStorage.setItem('pushstate_called', true)
-  pushState.apply(window, args)
+  pushState.apply(window.history, args)
 }
 
 // set up the listener, which increments the event_calls value
