@@ -1,4 +1,9 @@
 # url-listener
+
+<a href="https://www.npmjs.com/package/url-listener"><img src="https://img.shields.io/npm/dm/url-listener.svg" alt="Downloads"></a>
+<a href="https://www.npmjs.com/package/url-listener"><img src="https://img.shields.io/npm/v/url-listener.svg" alt="Version"></a>
+<a href="https://www.npmjs.com/package/url-listener"><img src="https://img.shields.io/npm/l/url-listener.svg" alt="License"></a>
+
 Listen for url changes without using a timer
 
 ## Install
