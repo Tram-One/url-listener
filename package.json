@@ -1,6 +1,6 @@
 {
   "name": "url-listener",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Listen for url changes without using a timer",
   "main": "dist/url-listener.js",
   "files": [
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JRJurman/url-listener.git"
+    "url": "git+https://github.com/Tram-One/url-listener.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JRJurman/url-listener/issues"
+    "url": "https://github.com/Tram-One/url-listener/issues"
   },
-  "homepage": "https://github.com/JRJurman/url-listener#readme",
+  "homepage": "https://github.com/Tram-One/url-listener#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.0",
