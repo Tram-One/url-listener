@@ -1,6 +1,6 @@
 {
   "name": "url-listener",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Listen for url changes without using a timer",
   "main": "dist/url-listener.js",
   "files": [
