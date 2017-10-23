@@ -1,3 +1,5 @@
+// we won't always have this file built, so don't depend on it to pass lint
+// eslint-disable-next-line import/no-unresolved
 const urlListener = require('../../dist/url-listener')
 
 // set the inital value of event_calls to 0
