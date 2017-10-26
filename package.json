@@ -17,6 +17,7 @@
   "scripts": {
     "lint": "xo listener.js webpack.config.js tests/specs/*.js",
     "build": "webpack",
+    "pretest": "npm run build",
     "test": "jasmine tests/specs/listener-spec.js"
   },
   "repository": {
