@@ -1,6 +1,6 @@
 {
   "name": "url-listener",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Listen for url changes without using a timer",
   "main": "dist/url-listener.js",
   "files": [
@@ -15,7 +15,9 @@
     "events"
   ],
   "scripts": {
+    "lint": "xo listener.js webpack.config.js tests/specs/*.js",
     "build": "webpack",
+    "pretest": "npm run build",
     "test": "jasmine tests/specs/listener-spec.js"
   },
   "repository": {
@@ -33,8 +35,15 @@
     "babel-loader": "^7.1.0",
     "babel-preset-env": "^1.5.2",
     "budo": "^10.0.4",
+    "eslint-config-tram-one": "^1.1.0",
     "jasmine": "^2.6.0",
     "nightmare": "^2.10.0",
-    "webpack": "^3.0.0"
+    "webpack": "^3.0.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extends": [
+      "tram-one"
+    ]
   }
 }

@@ -5,6 +5,6 @@ module.exports = (callback) => {
   window.history.pushState = (state, ...args) => {
     const returnValue = pushState.apply(history, [state].concat(args))
     callback({state})
-    return returnValue;
+    return returnValue
   }
 }
