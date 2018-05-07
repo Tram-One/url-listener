@@ -1,10 +1,13 @@
 {
   "name": "url-listener",
-  "version": "1.2.5",
+  "version": "2.0.0",
   "description": "Listen for url changes without using a timer",
-  "main": "dist/url-listener.js",
+  "main": "dist/url-listener.esm.js",
+  "module": "dist/url-listener.esm.js",
+  "umd": "dist/url-listener.umd.js",
   "files": [
-    "dist/url-listener.js"
+    "dist/url-listener.esm.js",
+    "dist/url-listener.umd.js"
   ],
   "keywords": [
     "frontend",
@@ -12,11 +15,14 @@
     "pushstate",
     "popstate",
     "url",
-    "events"
+    "events",
+    "tram-one"
   ],
   "scripts": {
     "lint": "xo listener.js webpack.config.js tests/specs/*.js",
-    "build": "webpack",
+    "build-esm": "rollup -c ./rollup.config.esm.js",
+    "build-umd": "rollup -c ./rollup.config.umd.js",
+    "build": "npm run build-esm && npm run build-umd",
     "pretest": "npm run build",
     "test": "jasmine tests/specs/listener-spec.js"
   },
@@ -31,13 +37,14 @@
   },
   "homepage": "https://github.com/Tram-One/url-listener#readme",
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.0",
-    "babel-preset-env": "^1.5.2",
     "budo": "^10.0.4",
-    "eslint-config-tram-one": "^1.1.0",
+    "eslint-config-tram-one": "^2.0.0",
     "jasmine": "^2.6.0",
     "nightmare": "^2.10.0",
+    "rollup": "^0.58.2",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-filesize": "^1.5.0",
+    "rollup-plugin-uglify": "^3.0.0",
     "webpack": "^3.0.0",
     "xo": "^0.18.2"
   },
