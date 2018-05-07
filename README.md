@@ -7,9 +7,19 @@
 Listen for url changes without using a timer
 
 ## Install
-```sh
+You can install url-listener with npm like any other package.
+```bash
 npm install --save url-listener
 ```
+
+You can also include the umd distributable in your webpage directly with a
+script tag.
+```html
+<head>
+  <script src="https://unpkg.com/url-listener@2.0.0/dist/url-listener.umd.js" />
+</head>
+```
+
 
 ## Usage
 ```javascript
